@@ -7,7 +7,7 @@ function img(lits: any, ...args: any[]): Image { return null }
 
 // set palette before creating screen, so the JS version has the right BPP
 image.setPalette(hex`__palette`)
-let screen = image.create(_screen_internal.getScreenWidth(160), _screen_internal.getScreenHeight(120)) as ScreenImage
+let screen = image.create(_screen_internal.getScreenWidth(256), _screen_internal.getScreenHeight(240)) as ScreenImage
 
 namespace image {
     //% shim=pxt::setPalette
